@@ -1,0 +1,54 @@
+<div class="banner">
+  <div class="margin bg-dark">
+    <h2 class="align-center">Crear Cuenta</h2>
+    <p>Los detalles en la información son importantes para las personas que quieren conocer de tus eventos de teatro.</p>
+  </div>
+</div>
+
+    <form ng-submit="registro(user)">
+<div class="container cont-margin">
+      <div class="row">
+        <div class='col-sm-6'>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Nombre de Usuario</label>
+            <input ng-model="user.username" type="text" class="form-control" id="exampleInputEmail1" placeholder="Cuenta">
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class='col-sm-3'>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Nombre</label>
+            <input ng-model="user.name" type="text" class="form-control" id="exampleInputEmail1" placeholder="Nombre">
+          </div>
+        </div>
+        <div class='col-sm-3'>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Apellido</label>
+            <input ng-model="user.lastname" type="text" class="form-control" id="exampleInputEmail1" placeholder="Apellido">
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class='col-sm-6'>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Correo Electrónico</label>
+            <input ng-model="user.email" type="email" value="" name="EMAIL" class="required email form-control" placeholder="Ingresa tu correo electrónico aquí" id="mce-EMAIL email" required data-validation-required-message="Por favor Ingresar un correo electrónico valido.">          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class='col-sm-4'>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Contraseña</label>
+            <input ng-model="user.password" type="password" class="form-control" id="exampleInputEmail1" placeholder="Contraseña" maxlength="25">
+          </div>
+        </div>
+      </div>
+
+    <button type="submit" class="btn btn-default">Registrar</button>
+    </div>
+      
+    </form>

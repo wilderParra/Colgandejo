@@ -1,0 +1,37 @@
+    <div class="banner">
+      <div class="margin" role="group" aria-label="...">
+        <button type="button" class="btn btn-default">Calificación</button>
+        <button type="button" class="btn btn-default">Eventos Próximos</button>
+        <button type="button" class="btn btn-default">Numero De Visitas</button>
+      </div>
+    </div>
+
+    <div class="calendario">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+          <h2 class="text-right">Agosto</h2>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+          <p>2015</p>
+        </div>
+      </div>
+    </div>
+
+    </div>
+    <div class="container cont-margin"> 
+      <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" ng-repeat="Evento in Eventos">
+          <div class="eventos" >
+            <a ng-class="{'active' : activeView == '/agenda'}" href="#/evento" rel="prettyPhoto">
+              <img src="{{Evento.Imagen}}" alt="">
+            </a>
+            <div>
+              <h4><a href="">{{Evento.Nombre}}</a></h4>
+              <p class="descripcion">{{Evento.Descripcion}}</p>
+              <p>Calificación: </p> <p>{{Evento.Calificacion}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>

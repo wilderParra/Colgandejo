@@ -1,0 +1,60 @@
+    <div class="banner">
+      <div class="container inicio">
+          <h1 class="align-center">Construye la agenda de teatro de Cali</h1>
+          <p>Infórmate, crea y comparte esta experiencia.</p>
+          <p><a ng-show="!sessionUser" class="btn btn-default" href="#/registro" role="button">Regístrate</a>
+          <a ng-show="sessionUser" class="btn btn-default" href="#/crearevento" role="button">Crear Evento</a>
+          </p>
+      </div>
+    </div>
+
+    <div class="container">
+      <h2 class="align-center">Proximos Eventos</h2>
+      <div class="row">
+
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" ng-repeat="Evento in Eventos">
+          <div class="eventos" >
+            <a ng-class="{'active' : activeView == '/agenda'}" href="#/evento" rel="prettyPhoto">
+              <img src="{{Evento.Imagen}}" alt="">
+            </a>
+            <div>
+              <h4><a href="">{{Evento.Nombre}}</a></h4>
+              <p class="descripcion">{{Evento.Descripcion}}</p>
+              <p>Calificación: </p> <p>{{Evento.Calificacion}}</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+          <button type="button" class="btn btn-default">Ver Más</button>
+        </div>
+      </div>
+      <hr>
+      </div> <!-- /container -->
+      <section class="bg-dark">
+        <div class="container">
+          <div class="margin line margin-bot">
+            <div class="row">
+              <div class="col-sm-4 col-sm-offset-2 text-right">
+                <h2 >Un espacio de cultura Agenda de Teatro para la creación y divulgación</h2>
+              </div>
+              <div class="col-sm-6 text-left">
+                <p class="margin">Una estrategia diferente transformada en una plataforma de red social que conecta al público de teatro de Cali para divulgar la agenda de eventos.</p><p>
+                Una plataforma para el conocimiento, creación y divulgación de las producciones teatrales en la ciudad.</p>
+              
+                <p>¡Comparte esta experiencia!</p>
+              </div>
+              <div class="col-sm-2 col-sm-offset-6 text-center">
+                <i class="fa fa-facebook fa-2x wow bounceIn " data-wow-delay=".1s"></i>
+                <p><a href="https://www.facebook.com/colgandejoagendateatral" target="_blank">Colgandejo</a></p></div>
+              <div class="col-sm-2 text-center">
+                <i class="fa fa-twitter fa-2x wow bounceIn " data-wow-delay=".1s"></i><p><a href="https://www.twitter.com/_Colgandejo" target="_blank">@_Colgandejo</a></p>
+              </div>
+              <div class="col-sm-2 text-center">
+                <i class=" fa fa-envelope-o fa-2x wow bounceIn" data-wow-delay=".1s"></i>
+                <p><a href="mailto:info@Colgandejo.com">info@colgandejo.com</a></p>
+              </div>
+            </div> 
+          </div>
+        </div>
+      </section>

@@ -1,0 +1,125 @@
+ <div class="banner">
+      <div class="margin bg-dark">
+          <h2 class="align-center">Crear evento</h2>
+          <p>Los detalles en la información son importantes para las personas que quieren conocer de tu evento de teatro.</p>
+      </div>
+    </div>
+  
+    <div class="container cont-margin">
+      <div class="row">
+        <div class='col-sm-6'>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Nombre de la obra</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="nombre">
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class='col-md-3'>
+          <div class="form-group">
+            <div class='input-group date' id='datetimepicker1'>
+              <input type='text' class="form-control" />
+              <span class="input-group-addon">
+                  <span class="glyphicon glyphicon-calendar"></span>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class='col-md-3'>
+          <div class="form-group">
+            <div class='input-group date' id='datetimepicker2'>
+              <input type='text' class="form-control" />
+              <span class="input-group-addon">
+                  <span class="glyphicon glyphicon-calendar"></span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class='col-sm-3'>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Lugar</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Lugar">
+          </div>
+        </div>
+        <div class='col-sm-3'>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Direccion</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Direccion">
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class='col-sm-3'>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Precio</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Precio">
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class='col-sm-5'>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Descripcion Corta</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="255 Caracteres" maxlength="255">
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class='col-sm-6'>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Descripcion Larga</label>
+            <textarea type="text" class="form-control" id="exampleInputEmail1" placeholder="Insertar una descripción"></textarea>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class='col-sm-6'>
+          <div class="panel panel-default">
+            <div class="panel-heading"><strong>Imagen</strong> <small>Agregar una imagen para el evento</small></div>
+            <div class="panel-body">
+
+              <!-- Standar Form -->
+              <h4>Seleccionar una imagen desde tu computador</h4>
+              <form action="" method="post" enctype="multipart/form-data" id="js-upload-form">
+                <div class="form-inline">
+                  <div class="form-group">
+                    <input type="file" name="files[]" id="js-upload-files" multiple>
+                  </div>
+                  <button type="submit" class="btn btn-sm btn-default" id="js-upload-submit">Cargar imagen</button>
+                </div>
+              </form>
+
+              <!-- Drop Zone -->
+              <h4>Ó puedes arrastra la imagen hasta el cuadro</h4>
+              <div class="upload-drop-zone" id="drop-zone">
+                Arrastrar imagen aquí.
+              </div>
+
+              <!-- Progress Bar -->
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                  <span class="sr-only">60% Completado</span>
+                </div>
+              </div>
+
+              <!-- Upload Finished -->
+              <div class="js-upload-finished">
+                <h3>Archivos</h3>
+                <div class="list-group">
+                  <a href="#" class="list-group-item list-group-item-success"><span class="badge alert-warning pull-right">Completo</span>image-01.jpg</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <button type="submit" class="btn btn-default">Aceptar</button>
+    </div>
