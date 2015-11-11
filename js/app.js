@@ -50,9 +50,9 @@ var app = angular.module('app', [
       .when('/crearevento', {
         templateUrl: 'views/crearevento.html',
       })
-      .when('/evento', {
+      .when('/evento/:idEvento', {
         templateUrl: 'views/evento.html',
-        //controller: 'EventoController'
+        controller: 'EventoController'
       })
       .otherwise({
         redirectTo: '/'

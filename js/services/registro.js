@@ -1,7 +1,6 @@
 app.factory('Registro', function($q, $rootScope) {
   var User = {
 
-    user: {},
 
     registro: function(usuario) {
       var defer = $q.defer();

@@ -5,10 +5,17 @@ app.controller('AgendaController', function($scope, Eventos) {
     Eventos.getAll()
     .then(function(Eventos) {
       $scope.Eventos = Eventos;
-      console.log($scope.Eventos);
     }, function(error) {
       console.log(error);
     })
   };
   $scope.getAll();
+
+    $scope.getId = function(event) {
+    $scope.evento = event.target.getAttribute('data-evento');
+    sessionStorage['evento'] =  $scope.evento;
+    console.log( sessionStorage['evento']);
+    window.location="#/evento";
+  }
+  
 });
