@@ -10,4 +10,12 @@ app.controller('AgendaController', function($scope, Eventos) {
     })
   };
   $scope.getAll();
+
+    $scope.getId = function(event) {
+    $scope.evento = event.target.getAttribute('data-evento');
+    sessionStorage['evento'] =  $scope.evento;
+    console.log( sessionStorage['evento']);
+    window.location="#/evento";
+  }
+  
 });
